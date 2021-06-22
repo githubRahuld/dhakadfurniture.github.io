@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      <style>
+        .title{
+          font-family: 'Lobster', cursive;
+          font-size: 25px;
+          background-color: red;
+           border-radius: 5px;
+         }
+        .wfh{
+          color: grey;
+        }
+        .nav-2,a{
+           text-decoration: none;
+          color:black;
+          padding: 10px;
+          text-decoration: none;
+          font-family: sans-serif;
+          margin:10px;
+        }
+        a:hover{
+          color:#FF5E00FF;
+       }
+       #box-1,#box-2,#box-3{
+        background-color:#00FFFFD2;
+        margin: 10px;
+         font-size:15px;
+       }
+       .heading-1{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+       }
+    #center{
+        text-align: center;
+
+       }
+       .row-1,.row-2{
+           background-color: #C6C6C6FF;
+       }
+       .row-1,.row-2,img{
+          display: flex;
+         padding: 15px;
+         margin-left: 5px;
+         margin: 0 auto;
+        text-align: center;
+       }
+      .row-11,.row-22{
+           background-color:white;
+           margin: 5px;
+      }
+      .big-container{
+        background-color:#FFFF87FF;
+      }
+
+      .footer-1{
+        display: flex;
+        margin-right:90%;
+         
+      }
+
+     .we-accept{
+      padding: 10px;
+     }
+     .follow-us{
+    
+      margin-bottom:30%;
+      margin-left:70%;
+     }
+     .follow{
+      text-align: right;
+      padding: 10px;
+     }
+     
+     footer,.links{
+       background-color:#FF7F7FFF;
+}
+  footer,.links{
+    color: white;
+ }
+      .links,a:hover{
+       color:#FF8100FF;
+}
+h4{
+  text-align: center;
+  font-weight: bolder;
+
+}
+      </style>
+   
+    <title>Dhakad Furniture</title>
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand title" href="#">D`Furniture</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "href="about_us.html">About-Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorious
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Kids</a></li>
+            <li><a class="dropdown-item" href="#">Couples</a></li>
+            <li><a class="dropdown-item" href="#">Singles</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="mx-2">
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+    </div>
+  </div>
+</nav>
+
+<!--modal-->
+
+<!-- LOGIN Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to D`Furniture</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SIGNUP Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign UP</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div  class="nav-2" mx-4>
+   <a href="">Sale <span class="badge bg-danger">New</span></a>
+  <a href="">Sofas</a>
+  <a href="">Living</a>
+  <a href="">Bedroom</a>
+  <a href="">Dining</a>
+  <a href="">Storage</a>
+  <a href="">Study & Office</a>
+  <a href="">Kids Room</a>
+  <a href="">Decor</a>
+  <a href="">Lamp & light</a>
+  <a href="">Furnishing</a>
+   </div>
+
+<!--carousel-->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="couresel-222.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Flash Sale</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="couresel-333.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="couresel-555.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--categories-->
+<br>
+<div class="big-container">
+<h4 >SHOP FURNITURE BY CATEGORIES</h4>
+<div class="row-1">
+  <div class="row-11">
+  <img src="home-bed-1.jpg" width="80%" alt="">
+  <a href="">Beds</a>
+  </div>
+  <div class="row-11">
+  <img src="home-sofa-1.jpg" width="80%"" alt="">
+  <a href="">Sofas</a>
+  </div>
+  <div class="row-11">
+  <img src="home-diningtable-1.jpg" width="70%"alt="">
+  <a href="">Dining table Sets</a>
+  </div>
+</div>
+
+<div class="row-2">
+  <div class="row-22">
+  <img src="home-tv-units-1.jpeg" width="90%" alt="">
+  <a href="">TV Units</a>
+  </div>
+  <div class="row-22">
+  <img src="home-shoe-racks-1.jpg" width="75%"" alt="">
+  <a href="">Shoe Racks</a>
+  </div>
+  <div class="row-22">
+  <img src="home-book-shelves-1.jpg" width="80%"alt="">
+  <a href="">Books Shelves</a>
+  </div>
+</div>
+</div>
+
+<!--footer-->
+<hr>
+
+<div class="footer">
+   <h5 class="we-accept">We Accept</h5>
+  <div class="footer-1">
+     <img src="mastercard.jpg"  width="50px" alt="">
+     <img src="visa img.png" width="50px" alt="">
+     <img src="rupay.png"  width="50px" alt="">
+     <img src="phonepe.webp"  width="50px" alt="">
+     <img src="google pay.png" width="50px"  alt="">
+     </div>
+</div>
+
+ <footer class="links">
+      <a href="#">FAQ</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Terms in Use</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">&copy;</a>
+
+</footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
